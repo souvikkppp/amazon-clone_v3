@@ -52,7 +52,7 @@ export default function Nav({}: Props) {
             <div 
               onClick={() => {!session? signIn(): signOut()}}
               className='items-center justify-center px-2 text-white cursor-pointer hover:ring-1 hover:ring-white '>
-               <p className='font-normal '>{!session ?   "sign in" : `Hello ${session.user.name}`}</p>
+               <p className='font-normal '>{session && session.user ? `Hello ${session.user.name}`:  "sign in"}</p>
                <h3 className='-mt-1 font-bold'>Account & Lists</h3>
             </div>
             <div className='items-center justify-center hidden px-2 text-white cursor-pointer md:inline hover:ring-1 hover:ring-white '>

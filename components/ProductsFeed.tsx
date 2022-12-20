@@ -1,7 +1,7 @@
 import React from 'react'
 import Cards from './Cards'
 
-export default function({ products }: any) {
+export default function ProductsFeed({ products }: any) {
   return (
     <div className="grid grid-flow-row-dense mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:-mt-40 lg:-mt-52">
        {products.slice(0,4).map((product: any) => (
